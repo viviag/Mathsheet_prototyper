@@ -48,7 +48,7 @@ for clone in clones:
 
 # Take back "\end{document}"
 content.extend(parted_head[1])
-# Take back everything after "\end{document}" is present.
+# Take back everything after "\end{document}" if present.
 try: content.extend(parted_head[2])
 except IndexError: pass
 
