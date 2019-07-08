@@ -1,4 +1,4 @@
-# Works in current directory. Arguments - "S_<module>_<lesson>", preamble file.
+# Works in current directory. Arguments - "prefix", preamble file.
 
 import sys
 import re
