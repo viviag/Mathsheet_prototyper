@@ -40,8 +40,8 @@ content = parted_head[0]
 for clone in clones:
   clone_data = part_file(open(clone, 'r').readlines(), ending)[0]
 
-  # Add header.
-  content.append('\problem{%s}\n' % clone.split('.')[0])
+  # Add header and page break before new exercise.
+  content.append('pagebreak\n\problem{%s}\n' % clone.split('.')[0])
   # There is data before "\problem". So body of the first problem is inside parted_clone[2].
   # Fails if there is no problem. And it must fail in order to notify authors.
   content.extend(part_file(clone_data, problem)[2])
