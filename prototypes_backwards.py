@@ -53,6 +53,6 @@ try: content.extend(parted_head[2])
 except IndexError: pass
 
 # Finally write file.
-with open('%s_autogen.tex' % prefix, 'w') as output:
+with open('%s.tex' % prefix, 'w') as output:
   for string in content:
     output.write("%s" % string)
